@@ -5,10 +5,12 @@ declare(strict_types=1);
 namespace Horat1us\Yii\Console\Tests;
 
 use Horat1us\Yii\Console\Bootstrap;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 use yii\console;
 use yii\base;
 
+#[CoversClass(Bootstrap::class)]
 class BootstrapTest extends TestCase
 {
     public function testOverride(): void
